@@ -1,0 +1,84 @@
+.home-container{
+    background-image: linear-gradient(to bottom,#acdbfa ,#f0f3f5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+.heading{
+    color:#033f67;
+    font-size:58px;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f3f7;
+    height: 380px;
+    align-items: center;
+    padding: 40px;
+    border-radius: 12px;
+    margin-bottom: 100px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-color: transparent;
+    border:2px solid #202020;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.input-label{
+    margin-bottom: 5px;
+}
+.input-field{
+    width: 250px;
+    height: 25px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid #7a93a4;
+    color:#033f67;
+    padding: 3px 10px 3px 10px;
+}
+.input-field:hover{
+    border: 2px solid #021f2d;
+}
+.input-label{
+    color:#0568a6;
+    font-weight: 700;
+}
+.buttons-container{
+    display: flex;
+    justify-content: space-between;
+    width: 230px;
+    margin-top: 15px;
+}
+.btn{
+    width: 100px;
+    padding: 5px;
+    border-color: transparent;
+    background-color: #033f67;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #0568a6;
+}
+.para{
+    font-size: 14px;
+}
+.form-title{
+    color: #222e33;
+    font-size: 28px;
+}
+.error-message{
+    color:#d40505;
+    font-size: 12px;
+}
+.success-message{
+    color: rgb(10, 181, 10);
+    font-size: 12px;
+}
