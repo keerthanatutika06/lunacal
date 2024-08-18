@@ -1,25 +1,82 @@
-.todo-item{
+.todo-item {
     display: flex;
     list-style-type: none;
-    background-color: #035993;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     font-weight: 500;
     font-size: 20px;
-    width: 470px;
-    opacity: 0.9;
-    padding: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    height: 40px;
+    width: 100%;
+    padding: 5px 20px;
+    height: 50px;
     border-radius: 4px;
-    justify-content: flex-start;
     align-items: center;
     margin-bottom: 10px;
-    justify-content: space-between;
+    justify-content: space-between; 
+    font-family: sans-serif;
 }
-.delete-icon{
+
+.todo-text {
+    text-align: center;
+    max-width: 200px; 
+    flex: 1; 
+}
+.active{
+    text-decoration: line-through;
+}
+.todo-box{
+        height: 20px;
+        width: 15px;
+}
+.sub-item{
+    width: 18%;
+}
+
+.sub-small-item{
+    width: 2%;
+}
+.todo-status {
+    color: #000;
+    padding: 4px 8px;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 20px; /* Space between status and icons */
+}
+
+.icon-container {
+    display: flex;
+    align-items: center; /* Center icons vertically */
+}
+
+.edit-icon {
+    /* Space between edit and delete icons */
     cursor: pointer;
+    height: 50px;
+    width: 20px;
 }
-.todo-status{
-    color: rgb(232, 233, 234);
+
+.delete-icon {
+    cursor: pointer;
+    height: 50px;
+    width: 20px;
+}
+
+/* Status-specific styles */
+.done {
+    border: 2px solid #0568a6;
+    box-shadow: 2px 2px 6px #0568a6; 
+}
+
+.completed {
+    border: 2px solid #12d205;
+    box-shadow: 2px 2px 6px #12d205; 
+}
+
+.in-progress {
+    border: 2px solid #f68104;
+    box-shadow: 2px 2px 6px #f68104; 
+}
+
+.pending {
+    border: 2px solid #494949;
+    box-shadow: 2px 2px 6px #4a4a49; 
 }

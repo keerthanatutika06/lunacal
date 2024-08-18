@@ -1,5 +1,10 @@
-.todo-form-title{
-    font-size: 42px;
+.todo-form-title {
+    font-size: 32px;
+    justify-content: flex-start;
+    display: flex;
+    text-align: left; /* Align text to the left */
+    width: 100%; /* Ensure the title spans the full width */
+    margin-bottom: 18px;
 }
 .todo-input-field{
     height: 40px;
@@ -8,48 +13,56 @@
     border-color: transparent;
     border-radius: 10px;
     font-size: 16px;
+    margin-right: 20px;
 }
-.todo-container{
-    background-image: linear-gradient(to bottom,#acdbfa ,#f0f3f5);
+.todo-container {
+    background-image: linear-gradient(to bottom, #acdbfa, #f0f3f5);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px; /* Added padding for some spacing */
     min-height: 100vh;
     font-family: sans-serif;
+    padding-left: 100px; /* Reduce or remove if needed */
+    padding-top: 60px;
+    width: 100%;
 }
-.checkbox-container{
+
+.checkbox-container {
     display: flex;
-    margin:30px;
-    width: 400px;
+    margin: 20px 0;
+    width: 100%; /* Make sure it takes full width */
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
 }
 .checkbox-item{
-    width: 150px;
+    width: 120px;
     display: flex;
     align-items: center;
     margin-right: 20px;
     margin-bottom: 20px;
 }
-.todo-items-container{
+.todo-items-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 800px;
-    margin-left: 0px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 580px; /* Ensure the same width as the todos list */
+    margin-bottom: 20px;
 }
 .checkbox-label{
     color:#0568a6;
     font-weight: 700;
     padding-top: 2px;
 }
-.todo-input-container{
+.todo-input-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start; /* Align input and button to the start */
     align-items: center;
     width: 520px;
+    margin-bottom: 20px;
 }
 .add-btn{
     width: 100px;
@@ -59,17 +72,25 @@
     color: #fff;
     background-color:#0568a6;
     cursor: pointer;
+    font-size: 18px;
 }
 .todo-items-list{
     display: flex;
     flex-direction: column;
 }
-.todos-list-container{
+.todos-list-container {
     display: flex;
     flex-direction: column;
-    width: 580px;
+    width: 580px; /* Same width as todo items container */
+    align-items: flex-start; /* Align items to the start */
+    margin:0;
+    margin-left: -3px;
 }
 .todo-items-list{
     display: flex;
     flex-direction: column;
+    width: 580px; 
+}
+.heading{
+    margin:0px;
 }

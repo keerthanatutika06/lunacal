@@ -18,6 +18,7 @@ class Todos extends Component {
     const { todoInput, todoList, todoStatus } = this.state;
     let newtodo = {
       id: uuidv4(), 
+      todoId: todoList.length + 1,
       text: todoInput,
       status: todoStatus,
     };
@@ -36,6 +37,7 @@ class Todos extends Component {
     return (
       <div className="todo-container">
         <h1 className="heading">Todos</h1>
+        
         <div className="todo-items-container">
           <p className="todo-form-title">Create Task</p>
           <div className="todo-input-container">
@@ -109,18 +111,20 @@ class Todos extends Component {
               </label>
             </div>
           </div>
+
         </div>
 
         <div className="todos-list-container">
-          <ul className="todo-items-list">
+          <table className="todo-items-list">
             {todoList.map((eachtodo) => (
               <TodoItem
                 key={eachtodo.id}
                 todoDetails={eachtodo}
                 onClickDeleteItem={this.onClickDeleteItem}
+                statusClassName = {eachtodo.status}
               />
             ))}
-          </ul>
+          </table>
         </div>
       </div>
     );
